@@ -35,7 +35,7 @@ If the above links are no longer valid, you can visit [Uptodown](https://www.upt
 
 1. Create the root directory, and `git clone https://github.com/SemTroid/SEMTROID.git` to the directory.
 2. Run the Appium server.
-3. Install and run the base version of the application under test on the Android device, use class `runner.TraceRunner` to run and record the execution trace of a test script on the base version. The results are saved in folder `output.Appinfo`.
+3. Install and run the base version of the application under test on the Android device, use class `runner.TraceRunner` to run and record the execution trace of a test script on the base version. The results are saved in folder `output.AppInfo`.
 4. Install and run the updated version of the application under test on the Android device，Use class `runner.RepairRunner` to repair a test script on the updated version. The results are saved in folder `output.RepairedTC`.
 
 ## About experiments
@@ -45,7 +45,7 @@ If the above links are no longer valid, you can visit [Uptodown](https://www.upt
 
 ## About semantic model
 
-- The dataset folder `data` and label file `label.csv` used for semantic model fine-tuning are in the directory `resource.resnet50`.
+The semantic model fine-tuning code `train.py`, the dataset folder `data` and label file `label.csv` used for semantic model fine-tuning are in the directory `resource.resnet50`.
 
 
 
