@@ -26,9 +26,18 @@ The following are download links for the Apps used in this paper:
 
 If the above links are no longer valid, you can visit [Uptodown](https://www.uptodown.com/) or [APKPure](https://apkpure.com/) to download these apps.
 
+The following are the source code URLs of Apps for the extra experiment with COSER
+
+- [AnkiDroid](https://github.com/ankidroid/Anki-Android)
+- [ConnectBot](https://github.com/connectbot/connectbot)
+- [GnuCash](https://github.com/codinguser/gnucash-android)
+- [Network-monitor](https://github.com/caarmen/network-monitor)
+- [SoundBoard](https://github.com/meonwax/soundboard)
+- [WiFiAnalyzer](https://github.com/VREMSoftwareDevelopment/WifiAnalyzer)
+
 ## Test cases
 
-- The test cases for the base versions of applications are in the folder `resources`.
+- The test cases for the base versions of applications are in the folder `resources`(including the 6 Apps used in the extra experiment).
 - The test cases for the updated versions of applications are in the folder `correctTestCases`.
 
 ## How to run
