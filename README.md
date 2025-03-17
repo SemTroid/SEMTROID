@@ -37,7 +37,7 @@ The following are the source code URLs of the _Sw_ Apps
 
 ## Test cases
 
-- The test cases for the base versions of all the applications are in the folder [core/src/main/resources]((https://github.com/SemTroid/SEMTROID/tree/master/core/src/main/resources))
+- The test cases for the base versions of all the applications are in the folder [core/src/main/resources](https://github.com/SemTroid/SEMTROID/tree/master/core/src/main/resources)
 
 ## How to run
 
