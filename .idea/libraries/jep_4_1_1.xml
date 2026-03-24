@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jep-4.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../IDE/Anaconda3/envs/repair/Lib/site-packages/jep/jep-4.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
