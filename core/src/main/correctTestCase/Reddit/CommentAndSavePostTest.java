@@ -1,0 +1,47 @@
+package main.correctTestCase.Reddit;
+
+import io.appium.java_client.android.AndroidDriver;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+// Version：V 2024.04.0
+// steps：点击MoreOptions图标（展示的第一个内容） --> 点击Save图标 --> 点击评论图标 --> 点击取消保存图标
+
+
+public class CommentAndSavePostTest {
+
+    private AndroidDriver driver;
+
+    @Before
+    public void setUp() throws MalformedURLException {
+        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+        desiredCapabilities.setCapability("platformName", "Android");
+        desiredCapabilities.setCapability("platformVersion", "9");
+        desiredCapabilities.setCapability("deviceName", "device");
+        desiredCapabilities.setCapability("automationName", "UiAutomator2");
+        desiredCapabilities.setCapability("appPackage", "com.reddit.frontpage");
+        desiredCapabilities.setCapability("appActivity", "launcher.default");
+        desiredCapabilities.setCapability("noReset", true);
+        desiredCapabilities.setCapability("ensureWebviewsHavePages", true);
+        desiredCapabilities.setCapability("dontStopAppOnReset", true);
+        desiredCapabilities.setCapability("udid", "192.168.58.109:5555");
+        URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
+        driver = new AndroidDriver(remoteUrl, desiredCapabilities);
+    }
+
+    @Test
+    public void sampleTest() throws InterruptedException {
+//        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup[2]/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.view.View[2]").click();
+        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.ImageView").click();
+    }
+
+    @After
+    public void tearDown() {
+        driver.quit();
+    }
+}
